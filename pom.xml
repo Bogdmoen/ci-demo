@@ -33,6 +33,25 @@
                 </configuration>
                 <version>3.0.0-M5</version>
             </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.6</version>
+                <executions>
+                    <execution>
+                    <id>prepare-agent-2521</id>
+                        <goals>
+                        <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                    <id>report-2541</id>
+                        <goals>
+                        <goal>report</goal>
+                    </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
